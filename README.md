@@ -1,6 +1,6 @@
 # desafio8
 
-# questao1
+# questao 1
 ```java
         Scanner ler = new Scanner (System.in);
         
