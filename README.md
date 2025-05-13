@@ -1,6 +1,6 @@
 # desafio8
 
-# questao 1
+# questao1
 ```java
         Scanner ler = new Scanner (System.in);
         
@@ -53,4 +53,22 @@
         System.out.println("A soma dos números é "+soma);
 ```
 # questao4
+```java
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat ("0.00");
+
+        System.out.println("Digite o 1º número fracionário: ");
+        double n1 = ler.nextDouble();
+        System.out.println("Digite o 2º número fracionário: ");
+        double n2 = ler.nextDouble();
+        System.out.println("Digite o 3º número fracionário: ");
+        double n3 = ler.nextDouble();
+       System.out.println("A média destes três números é "+decimal.format((calcularMedia(n1,n2,n3))));
+
+    }
+    public static  double calcularMedia( double n1, double n2, double n3 ) {
+        double soma = ( n1 + n2 + n3 ) / 3;
+        return soma;
+```
+# questao5
 ```java
