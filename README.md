@@ -72,3 +72,43 @@
 ```
 # questao5
 ```java
+        String palavra;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite uma palavra: ");
+        palavra = ler.next();
+        System.out.println("Palavra original: "+palavra);
+        System.out.println("Palavra invertida: "+inverterTexto(palavra));
+    }
+    public static String inverterTexto( String texto ) { 
+        String inverter = " ";
+        for (int i = texto.length() - 1; i >= 0; i--) {
+            inverter += texto.charAt(i);
+    }
+    return inverter;
+```
+# questao6
+```java
+        double valor;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um valor em metros: ");
+        valor= ler.nextDouble();
+        System.out.println("De metros para Km é: " + conversorKM(valor)+"Km");
+}
+    public static double conversorKM( double conversor ) {
+        double calculo = conversor / 1000;
+        return calculo;
+```
+# questao7
+```java
+        double raio;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um número: ");
+        raio = ler.nextDouble();
+        System.out.println("O volume da esfera é: "+(calcularVolume(raio)) + "cm³");
+
+    }
+
+    public static double calcularVolume(double x) {
+        double calculo = (4.0 / 3.0) * Math.PI * (Math.pow(x, 3));
+        return calculo;
+```
